@@ -1,0 +1,24 @@
+Data from Anand Teknow:
+
+1. Distance from home to office (in kms)
+2. 6 months workig hours data for employees...planned vs actual
+
+case study on:
+*dept wise workflow with std timeline
+*customer highlighted productivity not in term of employees but to measure completion of orders.
+* checklist of preparing the documentation
+
+ATA mentioned that they want to measure productivity, for that they want to know:
+Business Problem:
+1. delays in completing task i.e std vs actual
+2. tracking and controlling of various processes involved in each dept in order to achieve CTD of customers.
+target 10 days before due date of CTD
+3. bad actors responsible for delays
+
+data requirement:
+1.std workflow document from punching of PO to dispatch with timelines for each dept.
+2.present ERP data 
+a)automated mails of completing each activity e.g. when PO is punched in system, ATA ERP system generated mail
+mentioning that PO is released, design dept has to start work on the same, same for purchase, production and 
+dispatch.
+b)Customer will provide data from April 17 onwards.		
