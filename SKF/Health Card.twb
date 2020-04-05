@@ -1,0 +1,1600 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10400.17.0915.2112                               -->
+<workbook original-version='10.4' source-build='10.4.0 (10400.17.0915.2112)' source-platform='win' version='10.4' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Health Card (SKF)' inline='true' name='federated.05yq30y1d5jbwr132syxi03ezqlx' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='SKF' name='excel-direct.0flhxj41cqzelq11y92gs12vud8f'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='E:/SKF/SKF.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0flhxj41cqzelq11y92gs12vud8f' name='Health Card' table='[&apos;Health Card$&apos;]' type='table'>
+          <columns gridOrigin='A1:I281:no:A1:I281:0' header='yes' outcome='2'>
+            <column datatype='string' name='Customer' ordinal='0' />
+            <column datatype='string' name='Equipment' ordinal='1' />
+            <column datatype='real' name='Bearing Vibration' ordinal='2' />
+            <column datatype='integer' name='Bearing temp °C' ordinal='3' />
+            <column datatype='integer' name='Oil temp °C' ordinal='4' />
+            <column datatype='integer' name='Bearing pressure  kPa' ordinal='5' />
+            <column datatype='string' name='Overall Health' ordinal='6' />
+            <column datatype='date' name='Current Service Date' ordinal='7' />
+            <column datatype='date' name='Next Service Date' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Customer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer]</local-name>
+            <parent-name>[Health Card]</parent-name>
+            <remote-alias>Customer</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Equipment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Equipment]</local-name>
+            <parent-name>[Health Card]</parent-name>
+            <remote-alias>Equipment</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bearing Vibration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bearing Vibration]</local-name>
+            <parent-name>[Health Card]</parent-name>
+            <remote-alias>Bearing Vibration</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bearing temp °C</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bearing temp °C]</local-name>
+            <parent-name>[Health Card]</parent-name>
+            <remote-alias>Bearing temp °C</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oil temp °C</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Oil temp °C]</local-name>
+            <parent-name>[Health Card]</parent-name>
+            <remote-alias>Oil temp °C</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bearing pressure  kPa</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bearing pressure  kPa]</local-name>
+            <parent-name>[Health Card]</parent-name>
+            <remote-alias>Bearing pressure  kPa</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Overall Health</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Overall Health]</local-name>
+            <parent-name>[Health Card]</parent-name>
+            <remote-alias>Overall Health</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current Service Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Current Service Date]</local-name>
+            <parent-name>[Health Card]</parent-name>
+            <remote-alias>Current Service Date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Next Service Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Next Service Date]</local-name>
+            <parent-name>[Health Card]</parent-name>
+            <remote-alias>Next Service Date</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Health Card]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I281:no:A1:I281:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Overall Health]' role='dimension' type='nominal' />
+      <column-instance column='[Overall Health]' derivation='None' name='[none:Overall Health:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.5' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Overall Health:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alert&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Alarm&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Normal&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+      <datasources>
+        <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+      </datasources>
+      <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+        <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+        <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]'>
+        <groupfilter function='member' level='[none:Customer:nk]' member='&quot;Customer 6&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]' />
+      </filter>
+      <filter class='categorical' column='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]'>
+        <groupfilter function='member' level='[none:Equipment:nk]' member='&quot;BLENDER – DOOR SIDE&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Bearing Pressure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Bearing Pressure</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+            <column datatype='integer' name='[Bearing pressure  kPa]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+            <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Bearing pressure  kPa]' derivation='Sum' name='[sum:Bearing pressure  kPa:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</column>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55aaff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.05yq30y1d5jbwr132syxi03ezqlx].[sum:Bearing pressure  kPa:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Bearing Temperature'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Bearing Temperature</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+            <column datatype='integer' name='[Bearing temp °C]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+            <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Bearing temp °C]' derivation='Sum' name='[sum:Bearing temp °C:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</column>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='height' value='36' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55aaff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.05yq30y1d5jbwr132syxi03ezqlx].[sum:Bearing temp °C:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Bearing Vibration'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Bearing Vibration</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+            <column datatype='real' name='[Bearing Vibration]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+            <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Bearing Vibration]' derivation='Sum' name='[sum:Bearing Vibration:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</column>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='background-color' value='#55aaff' />
+            <format attr='border-width' value='2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.05yq30y1d5jbwr132syxi03ezqlx].[sum:Bearing Vibration:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Current Service Date'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Last Service Date</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+            <column datatype='date' name='[Current Service Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+            <column-instance column='[Current Service Date]' derivation='MDY' name='[md:Current Service Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Current Service Date]' derivation='Year' name='[yr:Current Service Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</column>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.05yq30y1d5jbwr132syxi03ezqlx].[yr:Current Service Date:ok]' value='iyyyy' />
+            <format attr='text-align' value='center' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='width' field='[federated.05yq30y1d5jbwr132syxi03ezqlx].[md:Current Service Date:ok]' value='248' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.05yq30y1d5jbwr132syxi03ezqlx].[yr:Current Service Date:ok]' value='iyyyy' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#55ffff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='2' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55aaff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.05yq30y1d5jbwr132syxi03ezqlx].[md:Current Service Date:ok]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Health Card'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Health Card</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overall Health]' role='dimension' type='nominal' />
+            <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Overall Health]' derivation='None' name='[none:Overall Health:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</column>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55aaff' />
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Overall Health:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='0.80160218477249146' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Overall Health:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Next Service Date'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Next Service Date</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Next Service Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Next Service Date]' derivation='MDY' name='[md:Next Service Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</column>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.05yq30y1d5jbwr132syxi03ezqlx].[md:Next Service Date:ok]' value='308' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55aaff' />
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.05yq30y1d5jbwr132syxi03ezqlx].[md:Next Service Date:ok]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Oil Temperaure'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Oil Temperature</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Oil temp °C]' role='measure' type='quantitative' />
+            <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Oil temp °C]' derivation='Sum' name='[sum:Oil temp °C:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</column>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#55ffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55aaff' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='2' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.05yq30y1d5jbwr132syxi03ezqlx].[sum:Oil temp °C:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Health Card</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Overall Health]' role='dimension' type='nominal' />
+            <column-instance column='[Equipment]' derivation='Count' name='[cnt:Equipment:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Overall Health]' derivation='None' name='[none:Overall Health:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</column>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#55aaff' />
+            <format attr='border-width' value='2' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Overall Health:nk]' />
+              <wedge-size column='[federated.05yq30y1d5jbwr132syxi03ezqlx].[cnt:Equipment:qk]' />
+              <size column='[federated.05yq30y1d5jbwr132syxi03ezqlx].[cnt:Equipment:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+            <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+            <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</column>
+            <column>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759' fontsize='20' underline='true'>Health Card</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='Health Card (SKF)' name='federated.05yq30y1d5jbwr132syxi03ezqlx' />
+      </datasources>
+      <datasource-dependencies datasource='federated.05yq30y1d5jbwr132syxi03ezqlx'>
+        <column datatype='string' name='[Customer]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Equipment]' role='dimension' type='nominal' />
+        <column-instance column='[Customer]' derivation='None' name='[none:Customer:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Equipment]' derivation='None' name='[none:Equipment:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='3' param='vert' type='layout-flow' w='85500' x='800' y='1000'>
+              <zone h='5625' id='1' type='title' w='85500' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='92375' id='4' type='layout-basic' w='85500' x='800' y='6625'>
+                <zone h='15064' id='11' name='Bearing Pressure' w='25701' x='60599' y='6625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='15064' id='12' name='Oil Temperaure' w='31468' x='29131' y='6625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='77311' id='13' name='Current Service Date' w='25700' x='60600' y='21689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='38656' id='14' name='Next Service Date' w='31500' x='29100' y='21689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='15064' id='15' name='Bearing Vibration' w='28331' x='800' y='6625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='77311' id='16' name='Bearing Temperature' w='28300' x='800' y='21689'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='38655' id='17' name='Sheet 8' w='31500' x='29100' y='60345'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='129' h='98000' id='6' is-fixed='true' param='vert' type='layout-flow' w='12900' x='86300' y='1000'>
+              <zone h='6500' id='8' mode='dropdown' name='Bearing Pressure' param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]' type='filter' w='12900' x='86300' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6500' id='9' mode='dropdown' name='Bearing Pressure' param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]' type='filter' w='12900' x='86300' y='7500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5750' id='18' name='Sheet 8' pane-specification-id='0' param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Overall Health:nk]' type='color' w='12900' x='86300' y='14000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5750' id='19' name='Sheet 8' pane-specification-id='0' param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[cnt:Equipment:qk]' type='size' w='12900' x='86300' y='19750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Bearing Vibration'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]' type='filter' />
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Bearing Temperature'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]' type='filter' />
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Bearing Pressure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]' type='filter' />
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Oil Temperaure'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]' type='filter' />
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Current Service Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Next Service Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]' type='filter' />
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Health Card'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]' type='filter' />
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]' type='filter' />
+            <card param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Overall Health:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Overall Health:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[yr:Next Service Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Bearing Pressure'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Bearing Temperature'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Bearing Vibration'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Current Service Date'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Next Service Date'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Oil Temperaure'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Sheet 8'>
+          <zoom type='fit-width' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Overall Health:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Overall Health:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.05yq30y1d5jbwr132syxi03ezqlx].[cnt:Equipment:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Customer:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Equipment:nk]</field>
+            <field>[federated.05yq30y1d5jbwr132syxi03ezqlx].[none:Overall Health:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='24' name='Bearing Pressure' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACKElEQVRYhe2YPWgTYRjHf9cm5qONH8Uk5YQimaSD7RBIQKFLQAmIQbRDFzWDSAoOHUzA
+      XdJJLHbp0LFDW0LERSGDDkK72Q5FioYSkrNJ/ExNm5BLzqFRQyIoeNwLTf5ww3sPL+/v/ve8
+      z3P3SpqmaXSx+kQDiFbPANEAomVqvzEpgkKguj4DegaIBhCtjhrQrhVJMoJDmP5qAMCNI/yt
+      1PVboGeAaADR6hlg+IrpBbJeL+mWK5/6GfxKZS7Mjt/L7tI2v0uvSi0ZJXPBS9o/QTb+mrpO
+      OP/UBXRVJoMUSeAJj3SEGqk4xfdBzrxapHT7Gl/GEwyNAulF8stunE/XsDmylO7fpfhsleEr
+      g/+NY3gGqIqCaaTz4eE75aSCI3odswWGpsfYf74JQCWZwjJ9D9tpE1jOcjw6Rf1FioYOPMYb
+      sGvnmOdPkQIq41jlw5Hk82FWFDSgXnBhHWtJVtmPzayg6sBjuAHWmSecahqgfXvLXiyEslww
+      GuOXhHYB6cQ5HHeCNDa3ABcm3lBRDmPa+jo1WUYC+l0FKhst71tZ46Am61LADDbgJZ8iC+zn
+      ymiAVn5H6XECk88LDDIQktmbXaVWhc/zG9gvnwfAGgpQnZ/j4KMK1R1Ks0v0XwroAm9wF7jI
+      yVvbFCNB8rkymmUY+82HOJvVvC8Qw7k1Q24iji2WxDXanOYJ4558wIerftT6ANapR7h16AAA
+      UvupcPuJ0Iok9X6GjrJ+ABgBqI4PPbTcAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='40' name='Bearing Temperature' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAoCAYAAABOzvzpAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAByUlEQVRoge2ZvUtbUQBHz9P4VWuNaUpDCCE4SCcVEQVxayddSqn+CY5CO3UOCA7FQUQk
+      g+DgpGRz71AEg4g6iINICRJbCUHF4EdufB0bE6EOT3/B3DPeN7zDeffe9+W4rutSw9SpBdTY
+      AGoBNb7ygXGFhZCanwE2gFpATcUeUM6K4zyFh4z/BgAYe8bPSjW/BGwAtYAaG0AtoMYGUAuo
+      sQHUAmpsALWAmpoP8KCXocfkJjHOUeKwZOQDbzenaT3dIvf1C2e7eQgNEZiZob3Le115gEK6
+      mUByE3/07nh+Os7NyBKxxQi3qVmOv83TnJykyePzi5fACSYTpiFaeeQ884ng5xgOPuoHJgn0
+      /ORi13sDcYDfmBedNNx3qLe3ZHr6aBmMYjLGcwNxgG5ez03QCMA1xf01/nyc4Pzk6Qyq6C7Q
+      RP27UTpGLrjaA7a3+Xe9DZcbaXxh77csbYAf3zlOrFPIG8Bwe7BKLvmGln54FU6SXf2Fi6GY
+      miW3M8zLbu8VnPKfo+U/RlYc5/G+CZosl4txssspCnmDExrCH4/T0eeHO7fB9wQXpmiLeD8D
+      tAGqgCraAzTYAGoBNTaAWkCNDaAWUGMDqAXU/AUffHwLLZuwCwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='24' name='Bearing Vibration' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACmklEQVRYhe2YXUhTYRjHf2du+bGZbtkcw8QkqqspIRbWRdAgMgQJ20U3QRcSBEJdmFcV
+      g8CohKRCdiFU1IWOZUgXQRddVNQYMb2IghghcdQx5gfnaLozTxcT9pFaR5iHmv+rw/s+z3n/
+      z//9eJ73FVRVVSlgGPQmoDe2BdCbgN4w5jZ49GChIwp+BWwLoDcBvfHbGZCLYUHYCh664Y8C
+      AJz9j2ulgt8C2wLoTUBvFLwAf3UIbhbLPg8/fJGMFjfVoV7MWVYRZjweZiLZvtWhEGZA/TFC
+      9OJt5Kkkhn3t2Ad6KKtcNZr9RPzKZebGZXC0YOvro2K/tpDyKkBiogRbIERl7UZW9ViHQlgz
+      myI+Unknwmz3EMZrL9jbXI7i70a8Psqee20YkJB7vSy3PqJusIaVYD+TPQ8pCXRRrIFjHrdA
+      FEV0Ytow+LWgsPAkjAAwPoJ84BK25ioEijF1XKVi5hWyBEivmRfPUNVRh4CRouYubA1vkca1
+      jZZHAaZQyuoxaXUTh5idP5X6jkYpamggXYo5KTtiIiGm+mhszFjCRkoP16KIiqbh8iiAi133
+      O9kBwBLJLy+Zbu9kPrqBizTK9A2w323LH60cbFEWKKbo4GmsrRI/P69vtfzsOYbznvSs2u0k
+      x8ZI16EiCx8SmJypPsJh0vOtsPhxAqNT27GWPwHe3GHS956ErAAKK9/8xAO7KW1ax155x1z4
+      ONajGQG42jF/fUA8GENliYT/FnPWk5gtgMXNTmeAmP87KgrJYD/xsWNYXNpoCrmPorkPIsOC
+      sLm7gBJjcdBL7GmQhKwgOFqo9HqxHkrlMLmnCckdotq9av74AjFrP442S9ZvstKg6xyOvi5K
+      1kyDJ6gauEl5jbYVkD8B/hEUfCX4C8F73wUyOXTVAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='44' name='Current Service Date' width='192'>
+      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
+      MO3kHUk2bS4AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='44' name='Health Card' width='144'>
+      iVBORw0KGgoAAAANSUhEUgAAAJAAAAAsCAYAAACKTjG2AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEYklEQVR4nO3cf0xVZRzH8bdyF03TMUfKXMPNmTbXyHnO2LmBMIkaK1ioDPWid4sxLafY
+      rBwjJ8zU0WqmRqQ0EdJwkJBTacnsNm6aN3dwxtTljwhsMyVLIrgTu+7pDy56bVTbfW6i8/v6
+      7zznPM/zPbufPefXdkcopRRChGnkcBcg7m8SIKFFAiS0SICEFgmQ0CIBElokQEKLBEhokQAJ
+      LRIgoUUCJLRIgIQWCZDQIgESWiRAQosESGiRAAktEiChRQIktEiAhBYJkNAiARJaJEBCiwRI
+      aJEACS0SIKFFAiS0OP7rANu270Yd4j41Qv5cQeiQS5jQIgESWiRAQosESGjRCFAnNXkmpllA
+      3ZWQZm8pZl4Nndqlha+zJg+z1DuMFfybdipdFhnrfQRC23KLOHy364jAnNor0IwZULnzODd1
+      B3qQxLtxO+qpvzTchejTDtBjriU8+1UdzT2RKOdB4cBym/iqjoasQrd1Hy1jQaqFaSaRWVjL
+      ueBB7ZVFVLZ3c7QshySziMO0U7l8OetXLyDVMrEy1tB0somSnCRyyr8Ljn2abYueIck0Ma1U
+      8iva6I3gmejfAzkSmTv3Rz7ac26InTdpb3iDnDQnpukkbfFGPD8H16rOGvLMUrw9x9m8cFbw
+      kuOl1MzitbeCfZxpvLx9P3VrF5PmNDFnLeT91r6B/md3kv9CGk7TxHSmkVPSzJUhKrhnTcyl
+      YFQ9Ve1/a++qp3j7Q6xqOILta2bjEwcpqjgT3BngXGUxn0xcS7OvjHQAv59x2Ztp9tl8UXCV
+      8t1/MKfcQ6L3AAOvgMeRsaYRj21jH/mcgu5a9ndF7jQichM9demnvNmzgoK6O3/CMx9ks/Ly
+      S+z1HMO2j+HZlYw3y03NrRuk81y4avDqnq+xS1OCbWNJcL8z0OftFGzvNax1u/Acs2koGEnN
+      gVYAbo6dxJQJjoFX6X/20NFUzIf36m3PkBwkrNpC+uGVbGoLWYfaTjDKVUhirAMco0lYVsjM
+      Uz4uBvtMXVJBhTuB0YPfEMZbZDwdRzQQExPDmKmJzIiLJoZeeoHefVt49+QvBAKAYzRxsdAb
+      wSUoQk9hURjufKj6mNah1uR/9DhTJkeFMd+v7Fu3mtPWZg59a2PbDayYFsYw94DJrix+qz1I
+      92BDwkz8tVs5fjUAgT7aKrZy4kmL+DDH9/v9PDwmhmhHgL4LHvb5Irj8EMnH+AmZ5D61n9qm
+      a7eaplkp3GjcwWc/9QP9nK/awaH4FJyTdCe7znU/xD4aR3RUP12nv6Htsu6Yw+SRdJZNP0Xj
+      xeD2+Fw2Lr3BpnnJmNZzFH+fSdmy6WEPP/75+cTufBHLTGX+1gtMnDIuMnUPUmHrUNUuQ5W0
+      hDSd3abmGIYyXNWqQymlVED9sPd1NW+2pQzDUrMXbVBfXgoEu1crl1GiWu4Ys0WVGC5V3TG4
+      WRIyllId1S5lBCf8vWWDyk42lJGcrV55b4dan3u7ltDjxP9LPqYKLfImWmj5C9ypTG5HQddT
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='44' name='Next Service Date' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='24' name='Oil Temperaure' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAYCAYAAABKtPtEAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAABiElEQVRYhe2YPUtCYRiGr1P2pQZqnxQ4SEM0NEWENDQ01RJBDU3R4A9osilwiIamaHLo
+      B2i4uTk0OcSZGiIkHKLsJCUYBZ48eVrlKNRw7AnPucb7HZ6bm/d53g/FNE0TB9MjbUAaNwBp
+      A9J4rMK2hAtBHL8D3ACkDUjTMgOspBXlL3yI8WMAAFtdfFdyfAu4AUgbkMbxAfxqCHaSz+Q2
+      D8lik7LKhHqMLxenGM816RGCqRTBiL31xQOo3w8SyqgEwla9hP9EZXyls/WFW6CMUZqiL9y6
+      YpQ8bXW7EQ5Aw/BG6GuzYmjj9Nu83dshHMA8I2cx+gHQ+brN8rwR460Mw2fH+AAwaDzmqext
+      8KLa7+AfnQID9M6uE1x7p3bTrHvomY4S2pmldn1ve1XZAC5PeErmqX8YgEHj7oJKZoyhBXg+
+      zKJXdQBMLc/reQHvkv1DQfYUWN4lUEigre1T/zBQJqMEjhIM+2Fw8Yry5hF6VUfxzeA/OGV0
+      zn4LivVX2PojlFYU9zHUzXwDNzVomN5lR1kAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='164' name='Sheet 8' width='164'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 9' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACRUlEQVR4nO3XMQ6DMBQFQSdKQQH3PycVDZJzh0QWxc4cwO83W/g155wDot5PHwBPEgBp
+      AiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpn5WPzznHdV0rJ+Av
+      SwO473uc5zn2fV85Az9bGsAYY2zbNo7jWD0DP/EHIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgT
+      AGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApH0Bnt4RjhFBOTgA
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

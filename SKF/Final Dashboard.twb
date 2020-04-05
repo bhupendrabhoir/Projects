@@ -1,0 +1,1707 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.1003.0840                               -->
+<workbook original-version='10.3' source-build='10.3.4 (10300.17.1003.0840)' source-platform='win' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Payment (SKF)' inline='true' name='federated.0j0r4750nh3zqt130i27j1vnaqxv' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='SKF' name='excel-direct.10vsigx0r0clni14kmjxg1c1e3gc'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='E:/SKF/SKF.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.10vsigx0r0clni14kmjxg1c1e3gc' name='Payment' table='[Payment$]' type='table'>
+          <columns gridOrigin='A1:H19:no:A1:H19:0' header='yes' outcome='6'>
+            <column datatype='string' name='Customer Name' ordinal='0' />
+            <column datatype='date' name='Current Service Date' ordinal='1' />
+            <column datatype='integer' name='Payment Term days credit' ordinal='2' />
+            <column datatype='string' name='Payment Method' ordinal='3' />
+            <column datatype='string' name='Total Cost of Service' ordinal='4' />
+            <column datatype='string' name='Amount Received' ordinal='5' />
+            <column datatype='string' name='A/c Receivable' ordinal='6' />
+            <column datatype='date' name='Next Service Date' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[Payment]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Current Service Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Current Service Date]</local-name>
+            <parent-name>[Payment]</parent-name>
+            <remote-alias>Current Service Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment Term days credit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Payment Term days credit]</local-name>
+            <parent-name>[Payment]</parent-name>
+            <remote-alias>Payment Term days credit</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Payment Method</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Payment Method]</local-name>
+            <parent-name>[Payment]</parent-name>
+            <remote-alias>Payment Method</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cost of Service</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Total Cost of Service]</local-name>
+            <parent-name>[Payment]</parent-name>
+            <remote-alias>Total Cost of Service</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amount Received</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Amount Received]</local-name>
+            <parent-name>[Payment]</parent-name>
+            <remote-alias>Amount Received</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A/c Receivable</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[A/c Receivable]</local-name>
+            <parent-name>[Payment]</parent-name>
+            <remote-alias>A/c Receivable</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Next Service Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Next Service Date]</local-name>
+            <parent-name>[Payment]</parent-name>
+            <remote-alias>Next Service Date</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Payment]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>1</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H19:no:A1:H19:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[A/c Receivable (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[A/c Receivable]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;600000&quot;'>
+            <value>&quot;600000&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[A/c Receivable]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Amount Received (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Amount Received]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;800000&quot;'>
+            <value>&quot;800000&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Amount Received]' role='dimension' type='nominal' />
+      <column datatype='date' name='[Next Service Date]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='string' name='[Payment Method (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Payment Method]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;NEFT&quot;'>
+            <value>&quot;NEFT&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Payment Method]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Payment Term days credit]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Total Cost of Service (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Total Cost of Service]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;1100000&quot;'>
+            <value>&quot;1100000&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Total Cost of Service]' role='dimension' type='nominal' />
+      <column-instance column='[Payment Term days credit]' derivation='Sum' name='[sum:Payment Term days credit:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Next Service Date]' derivation='Year-Trunc' name='[tyr:Next Service Date:ok]' pivot='key' type='ordinal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.553846' group-percentage='0.0505495' measure-ordering='alphabetic' measure-percentage='0.395604' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0j0r4750nh3zqt130i27j1vnaqxv].[sum:Cost of Service 10 lakhs:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0j0r4750nh3zqt130i27j1vnaqxv]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0j0r4750nh3zqt130i27j1vnaqxv].[sum:Payment Term days credit:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0j0r4750nh3zqt130i27j1vnaqxv].[sum:Paid Lakhs:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0j0r4750nh3zqt130i27j1vnaqxv].[sum:Due Amount Lakhs:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[tyr:Next Service Date:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>#2017-01-01 00:00:00#</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>#2018-01-01 00:00:00#</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Payment Method (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;NEFT&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Amount Received (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;800000&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[A/c Receivable (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;600000&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Total Cost of Service (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;1100000&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0j0r4750nh3zqt130i27j1vnaqxv'>
+      <datasources>
+        <datasource caption='Payment (SKF)' name='federated.0j0r4750nh3zqt130i27j1vnaqxv' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0j0r4750nh3zqt130i27j1vnaqxv'>
+        <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+        <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]'>
+        <groupfilter function='member' level='[none:Customer Name:nk]' member='&quot;Customer 3&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='YEAR(Next Service Date)' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Amount Received' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Amount Received (group)' />
+        <param name='target' value='Amount Received' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Amount Receivable'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff'>A/C Receivable</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Payment (SKF)' name='federated.0j0r4750nh3zqt130i27j1vnaqxv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j0r4750nh3zqt130i27j1vnaqxv'>
+            <column datatype='string' name='[A/c Receivable (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[A/c Receivable]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='true' value='&quot;600000&quot;'>
+                  <value>&quot;600000&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[A/c Receivable]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column-instance column='[A/c Receivable]' derivation='None' name='[none:A/c Receivable:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='background-color' scope='cols' value='#ddebf0' />
+            <format attr='width' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:A/c Receivable:nk]' value='252' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' data-class='total' value='1' />
+            <format attr='border-color' data-class='total' value='#000000' />
+            <format attr='border-color' data-class='subtotal' value='#000000' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='border-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#00007f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[A/c Receivable (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:A/c Receivable:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Amount Received'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Payment (SKF)' name='federated.0j0r4750nh3zqt130i27j1vnaqxv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j0r4750nh3zqt130i27j1vnaqxv'>
+            <column datatype='string' name='[Amount Received (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Amount Received]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='true' value='&quot;800000&quot;'>
+                  <value>&quot;800000&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Amount Received]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column-instance column='[Amount Received]' derivation='None' name='[none:Amount Received:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='59' />
+            <format attr='vertical-align' data-class='subtotal' scope='cols' value='center' />
+            <format attr='vertical-align' data-class='subtotal' scope='rows' value='center' />
+            <format attr='text-align' value='center' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='width' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Amount Received:nk]' value='244' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='cols' value='center' />
+            <format attr='vertical-align' scope='cols' value='center' />
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='vertical-align' scope='rows' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='background-color' value='#00007f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[Amount Received (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Amount Received:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Cost of Service'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff'>Total Cost of Service</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Payment (SKF)' name='federated.0j0r4750nh3zqt130i27j1vnaqxv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j0r4750nh3zqt130i27j1vnaqxv'>
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Total Cost of Service (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Total Cost of Service]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='true' value='&quot;1100000&quot;'>
+                  <value>&quot;1100000&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Total Cost of Service]' role='dimension' type='nominal' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Cost of Service]' derivation='None' name='[none:Total Cost of Service:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='total' value='center' />
+            <format attr='text-align' data-class='subtotal' value='center' />
+            <format attr='band-color' scope='cols' value='#e9f0f1' />
+            <format attr='border-color' data-class='subtotal' value='#000000' />
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='width' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Total Cost of Service:nk]' value='236' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#ddebf0' />
+            <format attr='border-color' data-class='subtotal' value='#000000' />
+            <format attr='border-style' scope='rows' value='solid' />
+            <format attr='border-color' scope='rows' value='#000000' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00007f' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='dashed' />
+            <format attr='border-width' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[Total Cost of Service (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Total Cost of Service:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Detail Sheet'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Payment (SKF)' name='federated.0j0r4750nh3zqt130i27j1vnaqxv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j0r4750nh3zqt130i27j1vnaqxv'>
+            <column datatype='string' name='[A/c Receivable]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Amount Received]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Current Service Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Next Service Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Payment Method]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Payment Term days credit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Total Cost of Service]' role='dimension' type='nominal' />
+            <column-instance column='[A/c Receivable]' derivation='None' name='[none:A/c Receivable:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Amount Received]' derivation='None' name='[none:Amount Received:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Payment Method]' derivation='None' name='[none:Payment Method:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Cost of Service]' derivation='None' name='[none:Total Cost of Service:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Payment Term days credit]' derivation='Sum' name='[sum:Payment Term days credit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Current Service Date]' derivation='Year-Trunc' name='[tyr:Current Service Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Next Service Date]' derivation='Year-Trunc' name='[tyr:Next Service Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='dotted' />
+            <format attr='stroke-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='dotted' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='height' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[tyr:Current Service Date:ok]' value='10' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[sum:Payment Term days credit:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00007f' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#000000' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00007f' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[tyr:Next Service Date:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[sum:Payment Term days credit:qk]</rows>
+        <cols>([federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Payment Method:nk] / ([federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk] / ([federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Total Cost of Service:nk] / ([federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Amount Received:nk] / ([federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:A/c Receivable:nk] / ([federated.0j0r4750nh3zqt130i27j1vnaqxv].[tyr:Current Service Date:ok] / [federated.0j0r4750nh3zqt130i27j1vnaqxv].[tyr:Next Service Date:ok]))))))</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Next Service Date'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Payment (SKF)' name='federated.0j0r4750nh3zqt130i27j1vnaqxv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j0r4750nh3zqt130i27j1vnaqxv'>
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Next Service Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Next Service Date]' derivation='MDY' name='[md:Next Service Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Next Service Date]' derivation='Year' name='[yr:Next Service Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[md:Next Service Date:ok]' value='41' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='height' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[yr:Next Service Date:ok]' value='24' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='23' />
+            <format attr='width' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[md:Next Service Date:ok]' value='196' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='width' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[yr:Next Service Date:ok]' value='288' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Tableau Regular' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#00007f' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00007f' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[yr:Next Service Date:ok]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Payment Method'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Payment (SKF)' name='federated.0j0r4750nh3zqt130i27j1vnaqxv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j0r4750nh3zqt130i27j1vnaqxv'>
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Payment Method (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Payment Method]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='true' value='&quot;NEFT&quot;'>
+                  <value>&quot;NEFT&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Payment Method]' role='dimension' type='nominal' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Payment Method]' derivation='None' name='[none:Payment Method:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Payment Method:nk]' value='32' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='17' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='width' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Payment Method:nk]' value='228' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00007f' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[Payment Method (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Payment Method:nk]</rows>
+        <cols />
+      </table>
+    </worksheet>
+    <worksheet name='Service Date'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff'>Current Service Date</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Payment (SKF)' name='federated.0j0r4750nh3zqt130i27j1vnaqxv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j0r4750nh3zqt130i27j1vnaqxv'>
+            <column datatype='date' name='[Current Service Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+            <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Current Service Date]' derivation='Year' name='[yr:Current Service Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' data-class='subtotal' value='#00007f' />
+            <format attr='band-color' scope='cols' value='#00007f' />
+            <format attr='band-color' scope='rows' value='#00007f' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='width' field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[yr:Current Service Date:ok]' value='232' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='total' value='#00007f' />
+            <format attr='band-color' scope='cols' value='#00007f' />
+            <format attr='band-color' scope='rows' value='#00007f' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00007f' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[yr:Current Service Date:ok]</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759'>PAYMENT HISTORY</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='592' maxwidth='1155' minheight='592' minwidth='1155' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Payment (SKF)' name='federated.0j0r4750nh3zqt130i27j1vnaqxv' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0j0r4750nh3zqt130i27j1vnaqxv'>
+        <column datatype='string' name='[Customer Name]' role='dimension' type='nominal' />
+        <column-instance column='[Customer Name]' derivation='None' name='[none:Customer Name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='23' param='vert' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='7602' id='22' type='title' w='100000' x='0' y='0' />
+          </zone>
+        </zone>
+        <zone h='9628' id='25' mode='dropdown' name='Cost of Service' param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]' type='filter' w='13853' x='85368' y='3041' />
+        <zone h='14020' id='28' name='Amount Receivable' w='20693' x='25455' y='9291' />
+        <zone h='13176' id='29' name='Amount Received' w='19654' x='52554' y='9291' />
+        <zone h='17061' id='30' name='Service Date' w='20000' x='693' y='28209' />
+        <zone h='16892' id='31' name='Next Service Date' w='20519' x='26061' y='28378' />
+        <zone h='16554' id='32' name='Payment Method' w='19221' x='52900' y='28209' />
+        <zone h='12838' id='33' name='Payment Method' pane-specification-id='0' param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[Payment Method (group)]' type='color' w='12121' x='85541' y='20608' />
+        <zone h='47804' id='34' name='Detail Sheet' w='78182' x='779' y='47297' />
+        <zone h='16554' id='35' name='Detail Sheet' pane-specification-id='0' param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[tyr:Next Service Date:ok]' type='color' w='15065' x='84675' y='37331' />
+        <zone h='13682' id='27' name='Cost of Service' w='19827' x='866' y='9122' />
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Amount Receivable'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[A/c Receivable (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:A/c Receivable:nk]</field>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Amount Received'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[Amount Received (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Amount Received:nk]</field>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Cost of Service'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[Total Cost of Service (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Next Service Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Service Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Payment Method'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[Payment Method (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Customer Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Detail Sheet'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[tyr:Next Service Date:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[:Measure Names]</field>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:A/c Receivable:nk]</field>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Amount Received:nk]</field>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Payment Method:nk]</field>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[none:Total Cost of Service:nk]</field>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[tyr:Next Service Date:ok]</field>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[yr:Current Service Date:ok]</field>
+            <field>[federated.0j0r4750nh3zqt130i27j1vnaqxv].[yr:Next Service Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Amount Receivable'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Amount Received'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Cost of Service'>
+          <zoom type='fit-width' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Detail Sheet'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Next Service Date'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Payment Method'>
+          <zoom type='fit-width' />
+          <highlight field='[federated.0j0r4750nh3zqt130i27j1vnaqxv].[Payment Method (group)]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Service Date'>
+          <zoom type='fit-width' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='27' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='44' name='Amount Receivable' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAAsCAYAAAAzWrf+AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAD0UlEQVR4nO3cMUibeRzG8SeXSx28KUspbQgq0aJUhPel90bi4DuE22q8LY0WbOAUhwMx
+      cFtuaYcuBnoHLoUItxxEOSUIghZ0s7ZILYZGMRjTVB0yKBWERH43hPCqpU2HtpH8n8/4vnlI
+      InxJ/hC0iYiASFE/1PoFENUSAyClMQBSGgMgpTEAUhoDIKUxAFIaAyClMQBSGgMgpTEAUhoD
+      IKUxAFIaAyClMQBSGgMgpTEAUhoDIKUxAFIaAyClMQBSGgMgpTEAUhoDIKUxAFIaAyClMQBS
+      2o/VHmCz2b7H6yCqiaoBAAD/fy7VK34FIqUxAFIaAyClMQBSGgO4SrJTuK/r0PU/sXLu8vGL
+      GAZML3S9B4HIFDaOrXtnmWlEAj3QdS/Mgcd4vn92fojYgAmvrqMnEMHUxSGmIwH06Dq85gAe
+      P9+HtTzGi9gATK8OvSeAyNQGzi3ri1TxBQ+hr+KDLER8Epn8S4JaVJYrlw8SMmwEJbZekFKp
+      IEtRv5jRZfkgIlJ6KU/8pozN7MmpnMrWs0ExgnHZLQ8lMWxIMLYuhVJJCktR8ZtRWS4P5eUT
+      v5hjM7J3KnK69UwGjaDEdytPOSxGMCbrhZKUCksS9ZsSLQ/rDj8BroizVByT+TBGf/npwvX8
+      4hzWukMIdzlhtzthjgyhKTmLlRMAq/OYudaPhwEXGtAAz4NR3DtIIJkCkF/E3Fo3QuEuOO12
+      OM0RDDUlMVseYn7mGvofBuBqABo8DzB67wCJ8hCLc2voDoXR5bTD7jQxMtSE5OwKTmrwd/nW
+      GMCVcIj/ns7h7u8huC/d2dneRFtnOxorF6674HZsIZMFsttvUdTuoL1yz34Trlv7yGRPgJ1t
+      bLZ1ot0awuV2YKs8xNuihjvWEDddt7CfyeIEO9jebEOnNcR1lxuOrQyy3+bN1xQDqLWzFP7u
+      H0QmPI8/7tpr/WqUwwBqbXUa/+wV8O9vP0PXdei/PkUaSYzp9zGVBVo8HUhvpKyvH4c5ZIut
+      aHYDbs9tOF69Qapy7yyP3LsbaHY3Ai0edKQ3kLKGyGWLaC0PcdvxCm+sIfK5d7jR7EYjWuDp
+      SGPDGuIwl0WxtfmjT6e6UO2Q8AUPoa9pN171EGxEFj59CA5MSro8/PgQbERk4ZOH4IBMpitP
+      efkQbEhkoT4PwQzgqrkcgIgcrU5IqNcQTfNJ33hcXh9Z90o7CRnv84mmGdIbeiRL70vnhzIR
+      6hVD08TXNy7xi0NJjPeJT9PE6A3Jo6X3Yi2PZHUiJL2GJpqvT8bjr+Xcsq7YRD7/SzebzcYf
+      w1Hd4hmAlPY/iMdEi1yKBAcAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='44' name='Amount Received' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAAsCAYAAAAzWrf+AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEYklEQVR4nO3cT0ibdxzH8XeW2YzJVhBZKTYLWqxFaVdIZLFomc9cCqWocTtJbKHtoNJb
+      0bOndtCLXoqXWhS6Q8HaWaSHrQZaWIf9g9YSVw1KY7TaQQLKHFoTvjs8uMfuMEvBBfx9X9ff
+      8+F5CLzJIwRdIiIoZagPcv0ASuWSBqCMpgEoo2kAymgagDKaBqCMpgEoo2kAymgagDKaBqCM
+      pgEoo2kAymgagDKaBqCMpgEoo2kAymgagDKaBqCMpgEoo2kAymgagDKaBqCMpgEoo2kAymga
+      gDKaBqCMpgEoo3241QUul+v/eA6lcmLLAAD0/+eqnUpfgZTRNABlNA1AGU0DUEbTAHJpLc7N
+      9u+wqgIEqixaLkdZyDrHy4+6aLGqCARqCLf3Mb7snGVnbtEeriEQqMJquUz07SFdLRZVgQA1
+      4Xb63h5yqz1MTSBAldXC5egCznKZR10t9vPUhGnvG2fTcmeSLbzDJeq9ZGTkB0usiwMyuyqS
+      WYlJz6mghDpH7ePFfjkfbJau0ZRkMikZ7giJ1XFf/hQRyTyRKyFLLg7MyqqsylTPKQk298pL
+      eyj954PS3DUqqUxGUsMdErI65L49lCdXQv/cc3WqR04Fm6X35cYtz0uwuUtGUxnJpIalI2RJ
+      hz3csfQbIGfm+P35EjUNYbwecH9cztdWCanRGPPA/L07PD4a4dyRAtzuAqzWMxQPDfJgBRi5
+      y8CuJs6GvXjwUHr6Ag2L/QxNAPP3uPP4KJFzRyhwuymwWjlTPMSgPeTuwC6aztr39JSe5kLD
+      Iv32kHt3HnM0co4jBW7cBRatZ4oZGnzASk4/p+2lAeSMj69OVPDb4G2Sa5D9a4Lh6CyV9XUU
+      AdPxGGWHy8nfuHyPF1/eFDMJSMRfsO4/RPnGmbsI774FZhIrMB0nVnaYcmeI15fHlD3kxbqf
+      Q86QIu8+FmYSrDBNPFbGYWfIHq+PvKkZEtv/YeSMBpAzyyTiixR+vg8P4HZ/QuGeT5lNzm16
+      J1fbTQPImTGiQ4WEGiv5zAN4vNR/38BHN+8yAuwvrWByfMJ5/XidJLF+gBIf+EoPkvf0ORMb
+      Z9l5knN7KfHlw/5SKibHmXCGJBPrHLCHHMx7ynNnyHxyjr0lPvLZT2nFJOPOkNfJBOsHSvBt
+      +2eROxpAzvgoLpvk55/GSGeBtT/45cdbvAp8QRlQVFdP5cMbXBtLk82miXZfJ2Yd51g+8OUJ
+      mt4M0HM7yRprxPuuMrj7JN+UA0V11Fc+5Ma1MdLZLOloN9djFsftISea3jDQY792rcX7uDq4
+      m5P2kLr6Sh7euMZYOks2HaX7egzr+DHnNWwn2uqv5He4RL2nTOpX6W5tlGq/X/zBWvm2rVee
+      LTnnSyOdEqkNit9fLY3/OstM90tbY7X4/UGpjVyS4VeZzUPpjNRK0O+X6sY26X17KP1t9j2D
+      tRG5NPxKnOWSjHRGpDboF391o7T1PpNNyx3JJfLfv3RzuVz6Yzi1Y+krkDLa32nKsqNj8tH0
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='44' name='Cost of Service' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAAsCAYAAAAzWrf+AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEdUlEQVR4nO3cX0hbVxwH8G+mwiCgDxsU0RCWYv1T6ktuMYFZ6KW1ILFMGXsIRB/aB6WM
+      jbigDMXWUYXQsTCU7qHpDChYMHFupYNBFQULFaWSklYNDY1R1DF9CMqi3stvD9cYa7dZGJqR
+      8/s8Jfd3fuceLvlyD8klOiIiMCao99K9AMbSiQPAhMYBYELjADChcQCY0DgATGgcACY0DgAT
+      GgeACY0DwITGAWBC4wAwoXEAmNA4AExoHAAmNA4AExoHgAmNA8CExgFgQuMAMKFxAJjQOABM
+      aBwAJjQOABMaB4AJjQPAhMYBYELLPmqATqc7iXUwlhZHBgAA+P9zWabiLRATGgeACY0DwITG
+      AWBC4wCckO3fQ/j5h6/gkK24OXGwomJj1gfXpzKskgSpshYuXxDx/XIEflctKiUJVtmBrtEV
+      qPu9cUx5HJCtf9MHFRG/C7WVEiSrDEfXKFbUA2eN+OGqrYQkWSE7ujB6sBifgsehraey1gVf
+      MDVrxqEjvMMQdqRxuv1JE3038it9+5mZOsbfrHVWf0F9U2uUIKLEYoCcskzuaSIihabdVSQ7
+      A7SYIEoseKneYqe+11rn6lAjWeweeraukLL+mDqqZOoY3yQiImXaTVWykwJaI3nrLWRPNirT
+      5K6SyRlYpAQlaMFbTxZ7H2nVVRpqtJDd84zWFYXWH3dQldxBe9NmHA7AiXpNffZDAfhzkzaV
+      t8c0Dv1BRJPUabFRTyhZU+hpt0y2nhARLVF/vZmcj1KfzNXBa2R2PqJNIprstOyN2+t82k2y
+      rYdCRESTnWRJvtaK1C3vnWepn+rNTkpNu0qD1948TybhLVC6va+HPiv1Nh78Cb/NF8MifQBE
+      w5jbNeNcWbKahQJDIVYiUWzhFcKhYpSX6fd7TxmMyFmIIIoownO7MKcakVVgQOFKBNEtIBqe
+      w675HFLTFsBQuIJIdAt4FUaouBypaU/BYMzBQiR6fNcgjd7phzB2zNQI/F824c7qx7j9/dcY
+      mN5LRGZ+5v5X+A6QdnFMfNOEO3E7BgbbIecfuB0Yi1CSM4PnL5IHVCzHlpBvMkKP0yg6O4/g
+      i6394WuxKHbPmGCEEUUlOZhJNUJdjmEp3wSjHjAWlSBn5jlS0y4jtpQPk1EPnC7C2fkgUtOu
+      IRbdxRmT8fguQRpxANJt+Rd4H36Ixs4GmLIOFytQXbeDgHcYsW1gO+xD70gebJfLABTg0tXz
+      eNJ/D7MbKtSNUdy9H4J85QL0ACqq67AT8GJYa4SvdwR5tsvatqeiGnU7AXiHY9jGNsK+Xozk
+      2aBNewlXzz9B/71ZbKgqNkbv4n5IxpUL+sOLywg6on9/0Een0/GzQP/VxE1IzodvHS7+3I+B
+      j37851qDUdsetTbDMxaDkluKmjY3WuR8aFmJY8pzA60PXiKebcDF67fQ3lCOXADa16CtaPaM
+      IabkorSmDe4WGckbjBrxo7XZg7GYgtzSGrS5W1J3n/gUPDda8eBlHNmGi7h+qx0N5bnHc23S
+      jAPAhMZbICa0vwALdr12CMEtzQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Detail Sheet' width='116'>
+      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
+    </thumbnail>
+    <thumbnail height='51' name='Next Service Date' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAAzCAYAAADB2gewAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADYElEQVR4nO3dYWjUdRzH8fd1q1sNUjYnG7auhLEyNWv/sntwQQcuEmPeqietPFChtAxa
+      rQlLkIk+kJBBGPnAB1fe2APP3Bo+2MJsYw3pRmvidCyG1xxmzEEHWWud1wPT1O0a/K8a+P28
+      nt3/d/fj++De/P9/7g/nyWQyGUSMumO+BxCZTwpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGI
+      aQpATFMAYpoCENMUgJimAMS0vLne4PF4/o85RObFnAEA6C8E5HalSyAxTQGIaQpATFMAYpoC
+      ENMUgJiWQwBpJgei1L8YIuA4OMEw9dFBUteXR4nXhwk6DoHQq+w5foH09bXLnOuJsmdrmGBt
+      lORN207ydfNGqoIOjhMkXB9lMIXIfyKHAHrZ3/gtyxtaOZFI0NuygSufvM2BfoA0/fu28NGV
+      DbT0Jjhx4BmGG9/l0F/f9GRrHTu6IBio4Ndbdr14+D3e+uZR9radJNEbZ2tBC681tnPJ/aAi
+      WbkP4LdK6tqbiTyxGB/gK3uclSU/M3ruEnCSY0fuomZTmDIf+MojvFH9I4c7hgDw137Mp00R
+      gv78GdsOnxmgomo9qwq94FvMmlCA6cR3DLseVCQ79wHkF1Dg/ftlavAoncMVPOUUQXKEs9OV
+      rFh2bdXLkrL7uDCa5Jc5tq2sqmai8ygDk2mY+omu430U1axltetBRbLL7SY4PUp827MEXtpF
+      ovhNYokYEX9OG3Jx5HsouZ+F+UBeHsXFJUz/MM5EToOKzC6HAFJ079rCB6mXibXuIFR6w+nA
+      X85Dd/ZzaujagTTjY+cpXeqn4B/3PE9P52kC1WEeuMcL3kJWbX6FJ/vifDHuflKRbNwHMP45
+      BzsW8XpThKXeWxdXs7bmd44c/IyxKZgaibK/bQHr1iybbacbLOLB8gX0tF39HOnLDMUO8VXR
+      YzyyxPWkIll5MnM86unxeGZ/GrR7J05dx4zDFdvixCL+q5dH29+h+csx/rj3YZ5/fy8NoVK8
+      JInWvsCHM+5q17EvsZOnp0Zo391Ec9cZUtN3U7jyObbvbrj5DCPyL3EfgMhtQL8Ei2kKQExT
+      AGLan4OE67bE6HiHAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='53' name='Payment Method' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAA1CAYAAAAXg+StAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADPUlEQVR4nO3cXWhTZxzH8W+M4kRoxYvKQNjFUBEUgp6m1i4bBBGK1rdqFbUi3ji7wUCt
+      kwlSiLboGBa0VlGKAW9VIoqomGIKLbQRukH1YrU1tMURbJEMLUFDvGgVZa2RtjHD/+9zlZxz
+      HvIE8uU8eTlxpdPpNCJGTcv1BERySQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpA
+      TFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmTc90gMvl+hzz
+      EMmJjAEA6M/j5EulJZCYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDEtEkGkOJpuJY9
+      q304joNv9R5OP3gBRKhxdhCMTckcRbLmk34LNJ5EJMDuI72sawxxwTOX1/EOwt3Pp2puIlk3
+      iQA6aTp+myVHb/OTJw8Ad0EhpQUAj6dkciLZNvElUOxPOgY9rPTmjXNAgr9vvF0eFbMmECEx
+      uifVc4XqjSPLpmJ/JfXt7/bwNFxLpb8YxynGX3mQX7YEiAAjy6qa0dv/vZ9orx8d5+DbWM2V
+      ntSEn5rYkcU3wXksWPsbTXdaiEZPUBg6z7UY8LCBDRV1NPcNA/Aq8YjLVfsIxiAW3EXZvRVc
+      CrcRjbYRPraUZ72ZX8gvbh3AX3WZR4lXAAz3NVNXEXgvFpGxTXwJ9M0SPPnnaG1PUF463llg
+      HPmbOXvnMF73h5tjADOm4x5rTCaeam5e3Mq8iYwVsyZxBljO3oMraa0/QrBziBSQjHdwq3Xg
+      48MWFVJCiIZznQylgNRL/ulq4+EgzF+8lPyWENf6kkCS+JP+d8umEf30D6QgGafrepi/RrfO
+      XubF09nEH9f7SAIk/6W7pQN9CCWZTGoJlFd6kqu/fs39Q+spchxW7Wyke+acjw9ye6k69SMF
+      zftZU+TgfLeWnxu6GP4K3N4q6srinK4owfFt4/fI0HsDPfg3DdK4vghf2WFCs75l4dtd8zYT
+      OPkDz85sp8RxcFaVU3t3aIwHF/mQK53hekeXy5W7SyJjQXaU97I3WsP3uZmBfOH0TbCY9v8+
+      A4hkmc4AYpoCENMUgJimAMQ0BSCmvQE0quWWSVid/wAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='44' name='Service Date' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAAsCAYAAAAzWrf+AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAC9ElEQVR4nO3dSUhUcQDH8e9kpSDkoVVKBoSybDnkaxEaoYkIwihLFJScQ5csgtKsaAEp
+      8hASVihGeBjLskXbpMjAyvBQjBQGkgriYKKXggZsn+xQ2uLaExP6/z7wDvPW/+F9573hDTOO
+      np6eHkQMNWG8ByAynhSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNEUgBhNAYjRFIAYTQGI
+      0RSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNEUgBhNAYjRFIAYTQGI0RSAGE0BiNEmDreC
+      w+H4F+MQGRfDBgCg38+V/5VugcRoCkCMpgDEaApAjDaKAIK8ee4lJ9lNvGVhuZLI8TYQ6Fvc
+      SkVOEi7LIt69lbyaToJ9y97R9thL3o4kXOle/H379ONNt7CsP6dcau0PVGRQowigjsJDz1i0
+      v5yHPh91FzP4WrqHs/UAQepPZlL0NYOLdT4enl1N06G9XPhxpvvLszhyH1zxMbz/bZ9OPGU+
+      fL7e6QlFyRFEJLqJsz9QkUHZD+BDHFm3CvAsm0EoEBq1lCWz3tLa9hp4wp3KyWzelkRUKITO
+      9bBzYxfXqhoBcKYXc/6oB5czbOhjBKq5fDOClLQEwm0PVGRw9gMICyc85OfLQMMNqptiWGlN
+      BX8LLz/HsTi2d2kIs6Pm0Nnqp/svDtF86RyPFqayaZ7tUYoMaUQPwgYVbKVidyb5Xas4fvog
+      Zb4fRfiH3mwkuqv34bm3htKrqcwc/e5EBjSKzwABao9lkh9Io6z8CO7IXy4HzrnMn1TPi8be
+      GUE62l8RGe0c4a1MMxeKa1iYmkxsyPBri9hlP4CO25RUTWP7UQ/R/U7SFazf/InKkuu0f4SP
+      LV4Kb0aQuDZ2oD31E3xayZVONymJeu+XseUY7o+yHQ7HwN8Fqs3FyqrqNztmVwVlHuf326MD
+      2RQ8aOfLlAVsOHyC/e5IQvDjTd/CmaY/t0zkpC+XBALczV5H/vRTVB9Yji4AMpbsByDyH9CT
+      YDHaN/1+zhR+ZOBKAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
